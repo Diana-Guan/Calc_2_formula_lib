@@ -1,0 +1,103 @@
+\documentclass{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+
+\title{Calculus Formula Library}
+\author{Diana Guan}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Derivative Rules}
+
+\subsection*{Power Rule}
+\colorbox{yellow}{Power Rule:}
+If $g(x)=x^n$, then
+\[
+\frac{d}{dx}(x^n)=nx^{n-1}.
+\]
+
+\subsection*{Constant Multiple Rule}
+\colorbox{yellow}{Constant Multiple Rule:}
+If $f(x)$ is differentiable and $c$ is constant, then
+\[
+\frac{d}{dx}[c f(x)]=c f'(x).
+\]
+
+\subsection*{Chain Rule}
+\colorbox{yellow}{Chain Rule:}
+If $F(x)=f(g(x))$, then
+\[
+F'(x)=f'(g(x))\cdot g'(x).
+\]
+
+\subsection*{Product Rule}
+\colorbox{yellow}{Product Rule:}
+If $F(x)=f(x)g(x)$, then
+\[
+F'(x)=f(x)g'(x)+f'(x)g(x).
+\]
+
+\subsection*{Exponential Derivative Rule}
+\colorbox{yellow}{Exponential Derivative Rule:}
+If $a>0$ and $a\neq1$, then
+\[
+\frac{d}{dx}(a^x)=a^x\ln a.
+\]
+
+\section{Integral Rules}
+
+\subsection*{Constant Multiple Rule (Integral)}
+\colorbox{yellow}{Constant Multiple Rule:}
+\[
+\int c f(x)\,dx = c\int f(x)\,dx.
+\]
+
+\subsection*{Power Rule for Integrals}
+\colorbox{yellow}{Power Rule for Integrals:}
+If $n\neq -1$, then
+\[
+\int x^n\,dx=\frac{x^{n+1}}{n+1}+C.
+\]
+
+\subsection*{Exponential Integral Rule}
+\colorbox{yellow}{Exponential Integral Rule:}
+If $a>0$ and $a\neq1$, then
+\[
+\int a^x\,dx=\frac{a^x}{\ln a}+C.
+\]
+
+\section{Limit Rules}
+
+\subsection*{L'Hôpital's Rule}
+\colorbox{yellow}{L'Hôpital's Rule:}
+If
+\[
+\lim_{x\to a}\frac{f(x)}{g(x)}
+\]
+gives the indeterminate form $\frac{0}{0}$ or $\frac{\infty}{\infty}$, and $f$ and $g$ are differentiable near $a$, then
+\[
+\lim_{x\to a}\frac{f(x)}{g(x)}
+=
+\lim_{x\to a}\frac{f'(x)}{g'(x)},
+\].
+
+\section{Logarithm Rules}
+
+\subsection*{Log Power Rule}
+\colorbox{yellow}{Log Power Rule:}
+\[
+\ln(a^b)=b\ln(a).
+\]
+
+\subsection*{Change of Base Formula}
+\colorbox{yellow}{Change of Base Formula:}
+\[
+\log_b x=\frac{\ln x}{\ln b}.
+\]
+
+
+\end{document}
